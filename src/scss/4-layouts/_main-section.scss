@@ -1,0 +1,18 @@
+// ==========================================================================
+// #Main Section
+// ==========================================================================
+
+.main-section {
+	@include container;
+	@include susy-clearfix;
+	&__col {
+		@include span(12);
+		@include media-query(medium) {
+			@include span(6);
+		}
+		@include media-query(large) {
+			@include span(4);
+		}
+	}
+
+}

@@ -1,0 +1,72 @@
+// ==========================================================================
+// #Layouts; containers, sections and anything related - mostly used on all pages
+// ==========================================================================
+
+.container {
+	@include container;
+}
+
+.container--small {
+
+}
+
+.container--full-width {
+
+}
+
+.float-left {
+	float: left;
+}
+
+.float-right {
+	float: right;
+}
+
+
+
+/* Text Position 
+   ======================================================================== */
+.text-center {
+	text-align: center;
+}
+.text-left {
+	text-align: left;
+}
+.text-right {
+	text-align: right;
+}
+
+%section-header-text {
+	
+
+}
+
+.section {
+	margin: 40px 0;
+	@include media-query(medium) {
+		margin: 65px 0;
+	}
+	@include media-query(large) {
+		margin: 90px 0;
+	}
+
+	&--med {
+		margin: 30px 0;
+		@include media-query(medium) {
+			margin: 50px 0;
+		}
+		@include media-query(large) {
+			margin: 70px 0;
+		}
+	}
+
+	&--small {
+		margin: 15px 0;
+		@include media-query(medium) {
+			margin: 25px 0;
+		}
+		@include media-query(large) {
+			margin: 40px 0;
+		}
+	}
+}

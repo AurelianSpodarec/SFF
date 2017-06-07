@@ -1,0 +1,36 @@
+// ==========================================================================
+// #Main Nav
+// ==========================================================================
+
+.main-nav {
+	@extend %nav-block;
+	&.is-active{
+		@extend %nav-block-active;
+	}
+	&__list {
+	  @extend %nav-list;
+	}
+
+	&__item {
+		@extend %nav-item;
+		& a:hover {
+			@extend %nav-link;
+			@extend %nav-active;
+		}
+
+	}
+
+	&__link {
+		@extend %nav-link;
+		&:hover {
+			@extend %nav-active;
+		}
+		&--active{
+			@extend %nav-link;
+			@extend %nav-active;
+
+		}	
+		
+	}
+
+}

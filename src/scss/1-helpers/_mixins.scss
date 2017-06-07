@@ -5,21 +5,22 @@
 
 
 /*
+
 -   Media Query Mixin
 -   General
--   Fonts
+-   Font
 -   Images
 -   Aligning
 -   Position
 -   Transition/Transform
--   Buttons
+
 */
 
 
 
 /* #Mixin: Media Query
    ======================================================================== */
-
+//Mixin: Media Query
 @mixin media-query($name) {
 
   @if not map-has-key($breakpoints, $name) {
@@ -36,6 +37,17 @@
 
 /* #Mixin: General
    ======================================================================== */
+
+@mixin button-bg($bg) {
+  background: $bg;
+  &:hover {
+    background:darken($bg,8%);
+    transition: $btn-transition;
+  }
+  &:active {
+    background:darken($bg,25%);
+  } 
+}
 
 //Box Sizing Prefixes
 @mixin box-sizing($boxmodel) {
@@ -220,6 +232,8 @@
           transition: $tra;
 }
 
+
+
 // Transform
 @mixin transform($tsf) {
      -moz-transform: $tsf;
@@ -228,7 +242,6 @@
   -webkit-transform: $tsf;
           transform: $tsf;
 }
-
 
 /* #Mixin: Button
    ======================================================================== */

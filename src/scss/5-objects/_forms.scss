@@ -2,9 +2,25 @@
 // #Forms
 // ==========================================================================
 
-
 .form {
+	font-size: $font-size-base;
 	line-height: $input-height;
 	padding: $input-padding-y $input-padding-x;
-	font-size: $font-size-base;
+	transition: $input-transition;
+	width: 100%;
+
+	// Displays full width of the collumn or view
+	&--group {
+		width: 100%;
+    	display: table;
+	}
+
+	&--group-input {
+		display: table-cell;
+	}
+
+	//Displays Normally
+	&--auto-inline {
+		width: auto;
+	}
 }

@@ -4,7 +4,7 @@
 
 *, *:before, *:after {
 	@include box-sizing(border-box);
-	outline-color: $color-primary;
+	outline-color: $brand-color;
 }
 
 body {

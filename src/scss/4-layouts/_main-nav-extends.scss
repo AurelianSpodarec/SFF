@@ -1,0 +1,92 @@
+// ==========================================================================
+// #Layouts: Extend
+// ==========================================================================
+
+
+/* Variables
+   ======================================================================== */
+$site-header-height		: 46px;
+$site-header-nav-border : 2px solid $color-primary;
+$site-header-nav-link-p : 15px 25px;
+
+/* Main Nav
+   ======================================================================== */
+%nav-block {
+	@include susy-clearfix;
+	@include span(12);
+	@include transition(0.25s ease-in-out);
+	@include transform(translateY(-140%));
+    position: absolute;
+    z-index: 100;
+    display: block;
+	background-color: $color-primary;
+	@include media-query(large) {
+		@include transform(translateY(0));
+		position: inherit;
+    	background-color: $white;
+	}
+}
+
+%nav-block-active {
+	@include transform(translateY(0%));
+    height: auto;
+}
+
+%nav-list { 
+	text-align: center;
+	display: block;
+    background: none;
+    border-top: $site-header-nav-border;
+    border-bottom: $site-header-nav-border;
+    margin-top: $site-header-height;
+    @include media-query(large) {
+    	margin-bottom: 30px;
+    	margin-top: inherit;
+    }
+
+}
+
+%nav-item {
+	@include media-query(large) {
+		display: inline-block;
+	}
+}
+
+%nav-link {
+	color: $white;
+    padding: $site-header-nav-link-p;
+    font-weight: bold;
+    display: block;
+    text-transform: uppercase;
+    @include media-query(large) {
+    	color: green;
+	}
+}
+
+%nav-active {
+	color: red;
+	@include media-query(large) {
+		color: $color-secondary;
+	}
+}
+
+
+
+
+/* Section Headers
+   ======================================================================== */
+%section-header {
+	@include susy-clearfix;
+	@include span(12);
+}
+
+%section-header-inner {
+	@include susy-clearfix;
+}
+
+%section-header-heading {
+	border-bottom: 1px solid red;
+    font-size: 2.25em;
+    margin: 0 0 20px;
+    padding: 0 0 10px;
+}

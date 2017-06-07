@@ -2,6 +2,7 @@
 // #Colors
 // ==========================================================================
 
+
 //Define colors; be descriptive - use this http://chir.ag/projects/name-that-color/
 $cancan				: #DD97A9;
 $grannysmithapple 	: #A4DD97;
@@ -13,11 +14,11 @@ $tundora			: #444;
 $brightturquoise    : #2FE6F9;
 $pomegranate		: #F92F38;
 $grey				: #bbbbbb;
-//Assign those colors
 
+//Assign those colors; be descriptive to what you are assiging them
 $brand-color		: $cancan !default;
 $color-primary		: $grannysmithapple !default;
 $color-secondary	: $morningglory !default;
 $color-teritary		: $lightwisteria !default;
 
-$color-text 		: $tundora;
+

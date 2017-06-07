@@ -1,0 +1,53 @@
+// ==========================================================================
+// #Base
+// ==========================================================================
+
+*, *:before, *:after {
+	@include box-sizing(border-box);
+	outline-color: $color-primary;
+}
+
+body {
+	font-family: $base-font-family;
+    font-size: $base-font-size;
+    line-height: ($base-line-height/$base-font-size);
+
+    color: $base-text-color;
+    background-color: $base-background-color;
+
+    @if ($base-body-antialiased) {
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+    }
+}
+
+a {
+	text-decoration: none;
+	color: $link-color;
+	&:hover {
+		color: $link-hover-color;
+	}
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+	margin: 0;
+	padding: 0;
+}
+
+ul,
+ol {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+input {
+	margin: 0;
+	padding: 0;
+}

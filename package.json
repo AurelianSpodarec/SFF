@@ -1,0 +1,28 @@
+{
+  "name": "superflexibleframework",
+  "version": "0.0.1",
+  "description": "Super Flexible Framework; A framework created with Susy and Sass, to fight the daunting tasks, such as setting up the commmon modules like buttons, forms and so on. It will have a basic color template, and a good file structure for the project. ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "framework",
+    "susy",
+    "sass"
+  ],
+  "author": "Aurelian Spodarec",
+  "license": "ISC",
+  "devDependencies": {
+    "browser-sync": "^2.18.12",
+    "del": "^2.2.2",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^4.0.0",
+    "gulp-minify-css": "^1.2.4",
+    "gulp-plumber": "^1.1.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^3.1.0",
+    "gulp-sourcemaps": "^2.6.0"
+  },
+  "dependencies": {}
+}

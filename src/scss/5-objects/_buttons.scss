@@ -1,0 +1,71 @@
+// ==========================================================================
+// #Buttons
+// ==========================================================================
+
+.btn {
+    display: inline-block;
+    padding: $btn-padding-y $btn-padding-x;
+    font-family: $primary-font;
+    font-size: $font-size-base;
+    background-color: $btn-defautl-bg;
+    color: $white;
+    line-height: $btn-line-height;
+    transition: $btn-transition;
+  &:hover,
+  &:active,
+  &:focus {
+    color: $white;
+    background-color: lighten($btn-defautl-bg, 8%);
+  }
+}
+
+.btn--highlight {
+  @extend .btn;
+
+  background: color(froly);
+  color: rgba(white, 0.85);
+
+  &:hover,
+  &:active,
+  &:focus {
+    background: color(charcoal);
+    color: white;
+  }
+}
+
+.btn--sm {
+    @include button-size($btn-padding-y-sm, $btn-padding-x-sm, $font-size-sm, $line-height-sm);
+}
+
+.btn--lg {
+    @include button-size($btn-padding-y-lg, $btn-padding-x-lg, $font-size-lg, $line-height-lg);
+}
+
+
+.btn--primary {
+    @extend .btn;
+    @include button-colors($btn-primary-color, $btn-primary-bg);
+
+    &:hover {
+        background-color: lighten($btn-primary-bg, 7%);
+    }
+}
+
+.btn--fire {
+    @extend .btn;
+    @include button-colors($btn-fire-color, $btn-fire-bg);
+
+    &:hover {
+        background-color: lighten($btn-fire-bg, 7%);
+    }
+}
+
+.btn--water {
+    @extend .btn;
+    @include button-colors($btn-water-color, $btn-water-bg);
+
+    &:hover {
+        background-color: lighten($btn-water-bg, 7%);
+    }
+}
+

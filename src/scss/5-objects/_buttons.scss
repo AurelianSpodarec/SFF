@@ -31,6 +31,10 @@
     @include button-size($btn-padding-y-sm, $btn-padding-x-sm, $font-size-sm, $line-height-sm);
 }
 
+.btn--md {
+    @include button-size($btn-padding-y-md, $btn-padding-x-md, $font-size-base, $btn-line-height-md);
+}
+
 .btn--lg {
     @include button-size($btn-padding-y-lg, $btn-padding-x-lg, $font-size-lg, $line-height-lg);
 }

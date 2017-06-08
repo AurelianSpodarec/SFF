@@ -6,7 +6,6 @@
 //
 //  Media Query
 //  General
-//  Font
 //  Images
 //  Aligning
 //  Position
@@ -105,29 +104,6 @@
   -webkit-border-radius: $radius; 
   -moz-border-radius: $radius;
   border-radius: $radius;
-}
-
-
-
-// #Mixins: Font
-// ==========================================================================
-
-//Font Size
-@mixin font-size($size) {
-  font-size: $size;
-  font-size: calculateRem($size);
-}
-
-//Font
-@mixin font-face($family, $path, $weight: normal, $style: normal) {
-  @font-face {
-      font: {
-        family: $family;
-        style: $style;
-        weight: $weight; 
-      }
-      src: url("/fonts/#{$path}.woff") format("woff"); 
-  } 
 }
 
 

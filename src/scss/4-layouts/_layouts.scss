@@ -7,14 +7,16 @@
 //	- Container
 //	- Text and floats manipulation
 //	- Section
+//	- Main Headings
 
 
 
 // #Layouts: Containers
 // ==========================================================================
 
-	.container {
+	.wrap {
 		@include container;
+		@include susy-clearfix
 	}
 
 	.container--small {
@@ -56,33 +58,87 @@
 
 // #Layouts: Section
 // ==========================================================================
-
+	%section {
+		@include susy-clearfix;
+	}
 	.section {
-		margin: 40px 0;
+		padding: 40px 0;
+		@extend %section;
 		@include media-query(medium) {
-			margin: 65px 0;
+			padding: 65px 0;
 		}
 		@include media-query(large) {
-			margin: 90px 0;
+			padding: 90px 0;
 		}
 
 		&--med {
-			margin: 30px 0;
+			padding: 30px 0;
+			@extend %section;
 			@include media-query(medium) {
-				margin: 50px 0;
+				padding: 50px 0;
 			}
 			@include media-query(large) {
-				margin: 70px 0;
+				padding: 70px 0;
 			}
 		}
 
 		&--small {
-			margin: 15px 0;
+			padding: 15px 0;
+			@extend %section;
 			@include media-query(medium) {
-				margin: 25px 0;
+				padding: 25px 0;
 			}
 			@include media-query(large) {
-				margin: 40px 0;
+				padding: 40px 0;
 			}
 		}
 	}
+
+
+
+// #Layouts: Main Headings
+// ==========================================================================
+
+.section-header-heading {
+	border-bottom: 1px solid #ebebeb;
+    font-size: 2.25em;
+    margin: 0 0 20px;
+    padding: 0 0 10px;
+}
+
+.section-heading {
+	@include susy-clearfix;
+	@include span(12);
+	&--primary {
+		@extend .section-header-heading;
+		color: $brand-color;
+	}
+	&--secondary {
+		@extend .section-header-heading;
+		color: $color-secondary;
+	}
+
+}
+
+.section-heading--inner {
+	@include susy-clearfix;
+	&--primary {
+		@extend .section-header-heading;
+		color: $brand-color;
+	}
+	&--secondary {
+		@extend .section-header-heading;
+		color: $color-secondary;
+	}
+}
+
+.img-overlay-wrap {
+
+}
+
+.img-cover {
+	background: center center;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+}

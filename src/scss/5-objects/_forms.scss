@@ -8,6 +8,10 @@
 	padding: $input-padding-y $input-padding-x;
 	transition: $input-transition;
 	width: 100%;
+	background: $alabaster;
+	border-width: $input-border-width;
+	//outline: 2px solid #f7f7f7; // add this if the border-width is set to 0
+	border: 1px solid $alabaster; //set this for the same size of the butter if you remove border-width: 2px;
 
 	// Displays full width of the collumn or view
 	&--group {

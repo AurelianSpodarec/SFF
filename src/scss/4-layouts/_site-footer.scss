@@ -1,3 +1,45 @@
 // ==========================================================================
 // #Site Footer
 // ==========================================================================
+
+.site-footer {
+	@include container;
+	@include susy-clearfix;
+	&--outer {	
+		@include span(12);
+	}
+	&--inner {
+		@include flexbox();
+		@include flex(vertical);
+		@include flex-direction(column);
+		@include align-items(flex-start);
+		padding: 25px 0 15px;
+		border-top: 2px solid $brand-color;
+		@include media-query(medium) {
+			display: inherit;
+    		text-align: inherit;
+		}
+	}
+
+
+	&__copyright {
+    	@include order(2);
+    	width: 100%;
+	    @include media-query(medium) {
+	    	@include order(1);
+	    	float: left;
+	    	width: auto;
+	    }
+	}
+
+	&__made-by {
+    	@include order(1);
+    	width: 100%;
+    	@include media-query(medium) {
+	    	@include order(2);
+	    	float: right;
+	    	width: auto;
+	    }
+	}
+
+}

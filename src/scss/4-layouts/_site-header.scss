@@ -20,6 +20,12 @@ $site-header-head-paddings : .5em;
 	}
 	// Info
 	&__top-info {
+		@include susy-clearfix;
+		display: none;
+		line-height: 5.5em;
+		@include media-query(large) {
+			display: block;
+		}
 		border-bottom: 1px solid #ebebeb;
 		&--outer {
 		    @include container;
@@ -74,6 +80,12 @@ $site-header-head-paddings : .5em;
 		}
 	}
 
+	&__logo-wrapper {
+		float: left;
+		@include media-query(large) {
+			float: none;
+		}
+	}
 	&__logo {
 		font-size: 2em;
 		font-weight: bold;
@@ -85,7 +97,7 @@ $site-header-head-paddings : .5em;
 		position: relative;
 		border: 0;
 	    background: none;
-
+	    float: right;
 		@include box(30px);		
 		&--bar {
 			&,		

@@ -3,22 +3,39 @@
 // ==========================================================================
 
 
-//Define colors; be descriptive - use this http://chir.ag/projects/name-that-color/
-$cancan				: #DD97A9;
-$grannysmithapple 	: #A4DD97;
-$morningglory 		: #97D7DD;
-$lightwisteria 		: #CB97DD;
-$shocking			: #DD97C0;
-$white 				: #FFF;
-$tundora			: #444;
-$brightturquoise    : #2FE6F9;
-$pomegranate		: #F92F38;
-$grey				: #bbbbbb;
 
-//Assign those colors; be descriptive to what you are assiging them
-$brand-color		: $cancan !default;
-$color-primary		: $grannysmithapple !default;
-$color-secondary	: $morningglory !default;
-$color-teritary		: $lightwisteria !default;
+// #Colors: Define Colors - use this http://chir.ag/projects/name-that-color/
+// ==========================================================================
+
+	$sunglo				: #E56265;
+	$olivine			: #9bbb61;
+
+	$mine-shaft 		: #323232;
+	$scorpion			: #606060;
+	$givry				: #F9CFC7;
+
+	//Form
+	$alabaster			: #F7F7F7;
+
+	$cancan				: #DD97A9;
+	$grannysmithapple 	: #A4DD97;
+	$morningglory 		: #97D7DD;
+	$lightwisteria 		: #CB97DD;
+	$shocking			: #DD97C0;
+	$white 				: #FFF;
+	$tundora			: #444;
+	$brightturquoise    : #2FE6F9;
+	$pomegranate		: #F92F38;
+	$grey				: #bbbbbb;
+
+
+
+// #Colors: Colors Meaning
+// ==========================================================================
+
+	$brand-color		: $sunglo !default;
+	$color-primary		: $brand-color !default;
+	$color-secondary	: $olivine !default;
+	$color-teritary		: $lightwisteria !default;
 
 

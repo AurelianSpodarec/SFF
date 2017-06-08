@@ -6,7 +6,7 @@
 /* Variables
    ======================================================================== */
 $site-header-height		: 46px;
-$site-header-nav-border : 2px solid $color-primary;
+$site-header-nav-border : 2px solid $brand-color;
 $site-header-nav-link-p : 15px 25px;
 
 /* Main Nav
@@ -59,14 +59,14 @@ $site-header-nav-link-p : 15px 25px;
     display: block;
     text-transform: uppercase;
     @include media-query(large) {
-    	color: green;
+    	color: $nav-link-color-desktop;
 	}
 }
 
 %nav-active {
-	color: red;
+	color: $nav-active-mobile;
 	@include media-query(large) {
-		color: $color-secondary;
+		color: $nav-active-desktop;
 	}
 }
 

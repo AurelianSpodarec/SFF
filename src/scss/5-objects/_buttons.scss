@@ -71,3 +71,14 @@
 }
 
 
+.btn--top-search {
+
+    @extend .btn;
+    @include button-colors($btn-top-search-color, $btn-top-search-bg);
+
+    &:hover,
+    &:active,
+    &:focus {
+        background-color: lighten($btn-top-search-bg, 3%);
+    }
+}

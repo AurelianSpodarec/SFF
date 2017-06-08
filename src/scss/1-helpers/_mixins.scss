@@ -1,42 +1,40 @@
 // ==========================================================================
 // #Mixins
 // ==========================================================================
+//
+//  Table of content
+//
+//  Media Query
+//  General
+//  Font
+//  Images
+//  Aligning
+//  Position
+//  Transition/Transform
+//  Button
 
 
 
-/*
+// #Mixins: Media Query
+// ==========================================================================
 
--   Media Query Mixin
--   General
--   Font
--   Images
--   Aligning
--   Position
--   Transition/Transform
+    //Mixin: Media Query
+    @mixin media-query($name) {
 
-*/
+    @if not map-has-key($breakpoints, $name) {
+        @warn "Warning: `#{$name}` is not a valid breakpoint name.";
+    } @else {
+        @media (min-width: map-get($breakpoints, $name)) {
+            @content;
+            }
+        }
 
-
-
-/* #Mixin: Media Query
-   ======================================================================== */
-//Mixin: Media Query
-@mixin media-query($name) {
-
-  @if not map-has-key($breakpoints, $name) {
-    @warn "Warning: `#{$name}` is not a valid breakpoint name.";
-  } @else {
-    @media (min-width: map-get($breakpoints, $name)) {
-      @content;
-      }
-    }
-
-}
+  }
 
 
 
-/* #Mixin: General
-   ======================================================================== */
+// #Mixins: General
+// ==========================================================================
 
 @mixin button-bg($bg) {
   background: $bg;
@@ -109,8 +107,10 @@
   border-radius: $radius;
 }
 
-/* #Mixin: Images
-   ======================================================================== */
+
+
+// #Mixins: Font
+// ==========================================================================
 
 //Font Size
 @mixin font-size($size) {
@@ -132,8 +132,8 @@
 
 
 
-/* #Mixin: Images
-   ======================================================================== */
+// #Mixins: Images
+// ==========================================================================
 
 //Retina Mixin
 @mixin retina($image, $width, $height) {
@@ -150,8 +150,8 @@
 
 
 
-/* #Mixin: Aligning 
-   ======================================================================== */
+// #Mixins: Aligning
+// ==========================================================================
 
 //Center Block
 @mixin center-block {
@@ -170,8 +170,8 @@
 
 
 
-/* #Mixin: Positions
-   ======================================================================== */
+// #Mixins: Position
+// ==========================================================================
 
 @mixin position($position, $args: ()) {
   $offsets: top right bottom left;
@@ -220,8 +220,8 @@
 
 
 
-/* #Mixin: Transition/Transform
-   ======================================================================== */
+// #Mixins: Transition/Transform
+// ==========================================================================
 
 //Transitions
 @mixin transition($tra) {
@@ -243,8 +243,10 @@
           transform: $tsf;
 }
 
-/* #Mixin: Button
-   ======================================================================== */
+
+
+// #Mixins: Button
+// ==========================================================================
 
 // Button sizes
 @mixin button-size($padding-y, $padding-x, $font-size, $line-height) {

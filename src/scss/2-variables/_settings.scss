@@ -1,84 +1,113 @@
 // ==========================================================================
 // #Settings
 // ==========================================================================
-
-
-//Fonts
-$primary-font : Arial;
-$secondary-font : sans-serif;
-
-$font-size-base			: 1rem !default;
-$font-size-sm			: .875rem !default;
-$font-size-lg 			: 1.25rem !default;
-$font-size-xs			: .75rem !default;
-
-$font-size-base			: 1.5em !default;
-$line-height-sm 		: 1.5em !default;
-$line-height-lg 		: 1.5em !default;
-
-$color-text 		    : $tundora;
+//
+//	Table of Contents:
+//
+//	- Fonts
+//	- Navigation
+//	- Button
+//	- Forms
 
 
 
-// Global Settings
-$base-font-family 		: $primary-font;
-$base-font-size         : $font-size-base;
-$base-line-height       : $font-size-base;
-$base-text-color        : $color-text;
-$base-background-color  : $white;
-$base-body-antialiased  : true;
+// #Settings: Fonts
+// ==========================================================================
 
-$link-color				: $brand-color !default;
-$link-decoration		: none;
-$link-hover-color   	: darken($brand-color, 8%);
-$link-hover-decoration 	: none;
+	$primary-font : Arial;
+	$secondary-font : sans-serif;
+
+	$font-size-base			: 1rem !default;
+	$font-size-sm			: .875rem !default;
+	$font-size-lg 			: 1.25rem !default;
+	$font-size-xs			: .75rem !default;
+
+	$font-size-base			: 1.5em !default;
+	$line-height-sm 		: 1.5em !default;
+	$line-height-lg 		: 1.5em !default;
+
+	$color-text 		    : $tundora;
 
 
+	// Global Settings
+	$base-font-family 		: $primary-font;
+	$base-font-size         : $font-size-base;
+	$base-line-height       : $font-size-base;
+	$base-text-color        : $color-text;
+	$base-background-color  : $white;
+	$base-body-antialiased  : true;
 
-
-/* #Settings: Buttons
-   ======================================================================== */
-
-//Button Default
-$btn-primary-color:             $white !default;
-$btn-primary-bg:                $brand-color !default;
-$btn-primary-border-color:      $btn-primary-bg !default;
- 
-// Buttons Paddings
-$btn-padding-y: 				.5rem !default;
-$btn-padding-x:  				1rem !default;
-$btn-line-height:  				1.25 !default;
-$btn-defautl-bg:				$grey;
-
-$btn-padding-y-sm:		 		.25rem !default;
-$btn-padding-x-sm:		 		.5rem !default;
-$btn-line-height-sm:	 		1.5 !default;
-
-$btn-padding-y-lg:		 		.5rem !default;
-$btn-padding-x-lg:		 		.3rem !default; 
-$btn-line-height-lg:	 		1.5 !default;
-
-$btn-transition:		 		all .2s ease-in-out !default;
-
-//Buttons Colors
-$btn-primary-color:		 		$white !default;
-$btn-primary-bg:		 		$brand-color !default;
-
-$btn-water-color:		 		$white !default;
-$btn-water-bg:			 		$brightturquoise;
-
-$btn-fire-color:		 		$white !default;
-$btn-fire-bg:			 		$pomegranate;
+	$link-color				: $brand-color !default;
+	$link-decoration		: none;
+	$link-hover-color   	: $color-secondary;
+	$link-hover-decoration 	: none;
 
 
 
-/* #Settings: Forms
-   ======================================================================== */
+// #Settings: Navigation
+// ==========================================================================
 
-//Default
-$input-height:                 	(($font-size-base * $btn-line-height) + ($btn-padding-y / 2)) !default;
-$input-padding-y:				($btn-padding-y / 2);
-$input-padding-x:				($btn-padding-x / 2);
-$input-transition: 				$btn-transition;
+	//Mobile
+	$nav-active-mobile			: $givry;
+	
+	//Desktop
+	$nav-link-color-desktop     : $scorpion;
+	$nav-active-desktop         : $color-secondary;
 
-//Fonts
+
+
+// #Settings: Button
+// ==========================================================================
+
+	//Button Default
+	$btn-primary-color:             $white !default;
+	$btn-primary-bg:                $brand-color !default;
+	$btn-primary-border-color:      $btn-primary-bg !default;
+	 
+	// Buttons Paddings
+	$btn-padding-y: 				.5rem !default;
+	$btn-padding-x:  				1rem !default;
+	$btn-line-height:  				1.25 !default;
+	$btn-defautl-bg:				$grey;
+
+	$btn-padding-y-sm:		 		.25rem !default;
+	$btn-padding-x-sm:		 		.5rem !default;
+	$btn-line-height-sm:	 		1.5 !default;
+
+	$btn-padding-y-lg:		 		.5rem !default;
+	$btn-padding-x-lg:		 		.3rem !default; 
+	$btn-line-height-lg:	 		1.5 !default;
+
+	$btn-transition:		 		all .2s ease-in-out !default;
+
+	//Buttons Colors
+	$btn-primary-color:		 		$white !default;
+	$btn-primary-bg:		 		$brand-color !default;
+
+	$btn-water-color:		 		$white !default;
+	$btn-water-bg:			 		$brightturquoise;
+
+	$btn-fire-color:		 		$white !default;
+	$btn-fire-bg:			 		$pomegranate;
+
+	$btn-top-search-color:			$white;
+	$btn-top-search-bg:				darken($alabaster, 5%);
+
+
+
+// #Settings: Forms
+// ==========================================================================
+
+
+	//Default
+	$input-height:                 	(($font-size-base * $btn-line-height) + ($btn-padding-y / 2)) !default;
+	$input-padding-y:				($btn-padding-y / 2);
+	$input-padding-x:				($btn-padding-x / 2);
+	$input-transition: 				$btn-transition;
+
+	//Colors
+	$input-background: 				#F7F7F7;
+	$input-border-width:			0;
+
+
+

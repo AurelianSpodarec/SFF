@@ -8,6 +8,6 @@ I have created a dynamic like website, which is nothing like Bootstrap or Materi
 
 I have put everything that we might use, mixins, mixins for flexbox, general classes and so forth. 
 
-The framework is new, and there will be a lot of changes. 
+The framework is new, and there will be a lot of changes.  
 
 Will update when I'v done more :D

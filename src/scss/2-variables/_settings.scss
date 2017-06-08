@@ -5,6 +5,7 @@
 //	Table of Contents:
 //
 //	- Fonts
+//	- Typography
 //	- Global Settings
 //	- Navigation
 //	- Button
@@ -23,7 +24,7 @@
 	$font-size-lg:					1.25rem !default;
 	$font-size-xs:					.75rem !default;
 
-	$font-size-base:				1.5em !default;
+	$line-height-base:				1.5rem !default;
 	$line-height-sm:				1.5em !default;
 	$line-height-lg:				1.5em !default;
 
@@ -31,13 +32,46 @@
 
 
 
-// #Settings: Fonts
+// #Settings: Typography
+// ==========================================================================
+	$type-scale: (
+		tiny: (
+			font-size: 13px,
+			base-lines: 0.5
+		),
+		small: (
+			font-size: 16px,
+			base-lines: 0.75
+		),
+		base: (
+			font-size: $font-size-base,
+			base-lines: $line-height-base
+		),
+		medium: (
+			font-size: 25px,
+			base-lines: 1
+		),
+		large: (
+			font-size: 31px,
+			base-lines: 1
+		),
+		xlarge: (
+			font-size: 39px,
+			base-lines: 1.5
+		),
+		xxlarge: (
+			font-size: 49px,
+			base-lines: 2 
+		)
+	);
+
+
+// #Settings: Global Settings
 // ==========================================================================
 
-	// Global Settings
 	$base-font-family:				$primary-font;
 	$base-font-size:				$font-size-base;
-	$base-line-height:				$font-size-base;
+	$base-line-height:				$line-height-base;
 	$base-text-color:				$color-text;
 	$base-background-color:			$white;
 	$base-body-antialiased:			true;
@@ -95,7 +129,7 @@
 	$btn-fire-color:		 		$white !default;
 	$btn-fire-bg:			 		$pomegranate;
 
-	$btn-top-search-color:			$white;
+	$btn-top-search-color:			#6d6d6d;
 	$btn-top-search-bg:				darken($alabaster, 5%);
 
 

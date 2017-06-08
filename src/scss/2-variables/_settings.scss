@@ -5,6 +5,7 @@
 //	Table of Contents:
 //
 //	- Fonts
+//	- Global Settings
 //	- Navigation
 //	- Button
 //	- Forms
@@ -14,33 +15,37 @@
 // #Settings: Fonts
 // ==========================================================================
 
-	$primary-font : Arial;
-	$secondary-font : sans-serif;
+	$primary-font:					Arial;
+	$secondary-font:				sans-serif;
 
-	$font-size-base			: 1rem !default;
-	$font-size-sm			: .875rem !default;
-	$font-size-lg 			: 1.25rem !default;
-	$font-size-xs			: .75rem !default;
+	$font-size-base:				1rem !default;
+	$font-size-sm:					.875rem !default;
+	$font-size-lg:					1.25rem !default;
+	$font-size-xs:					.75rem !default;
 
-	$font-size-base			: 1.5em !default;
-	$line-height-sm 		: 1.5em !default;
-	$line-height-lg 		: 1.5em !default;
+	$font-size-base:				1.5em !default;
+	$line-height-sm:				1.5em !default;
+	$line-height-lg:				1.5em !default;
 
-	$color-text 		    : $tundora;
+	$color-text:					$tundora;
 
+
+
+// #Settings: Fonts
+// ==========================================================================
 
 	// Global Settings
-	$base-font-family 		: $primary-font;
-	$base-font-size         : $font-size-base;
-	$base-line-height       : $font-size-base;
-	$base-text-color        : $color-text;
-	$base-background-color  : $white;
-	$base-body-antialiased  : true;
+	$base-font-family:				$primary-font;
+	$base-font-size:				$font-size-base;
+	$base-line-height:				$font-size-base;
+	$base-text-color:				$color-text;
+	$base-background-color:			$white;
+	$base-body-antialiased:			true;
 
-	$link-color				: $brand-color !default;
-	$link-decoration		: none;
-	$link-hover-color   	: $color-secondary;
-	$link-hover-decoration 	: none;
+	$link-color:					$brand-color !default;
+	$link-decoration:				none;
+	$link-hover-color:				$color-secondary;
+	$link-hover-decoration:			none;
 
 
 
@@ -48,11 +53,11 @@
 // ==========================================================================
 
 	//Mobile
-	$nav-active-mobile			: $givry;
+	$nav-active-mobile:				$givry;
 	
 	//Desktop
-	$nav-link-color-desktop     : $scorpion;
-	$nav-active-desktop         : $color-secondary;
+	$nav-link-color-desktop:		$scorpion;
+	$nav-active-desktop:			$color-secondary;
 
 
 

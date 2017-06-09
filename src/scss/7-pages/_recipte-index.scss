@@ -1,0 +1,24 @@
+// ==========================================================================
+// #Recipte Index
+// ==========================================================================
+
+.reciptes 	{
+
+	&-sidebar {
+		@include span(12);
+		@include media-query(large) {
+			@include span(4 of 16 nest);
+		}
+	}
+
+	&-main {
+		@include span(12);
+		@include media-query(large) {
+			@include span(12 of 16 nest);
+		}
+
+		&--inner {
+			@include susy-clearfix;
+		}
+	}
+}

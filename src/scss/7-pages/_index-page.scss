@@ -1,12 +1,19 @@
 // ==========================================================================
-// #Slider
+// #Index Page
 // ==========================================================================
 
-.slider {
-	@include susy-clearfix;
+//Video About
+.video-about {
 	
 }
 
-.slider--inner {
+.video-about--inner {
+	@include susy-clearfix;
+}
+
+.video-about__col {
 	@include span(12);
+	@include media-query(medium) {
+		@include span(6);
+	}
 }

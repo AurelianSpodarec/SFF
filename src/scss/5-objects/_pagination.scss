@@ -1,0 +1,33 @@
+// ==========================================================================
+// #Pagination
+// ==========================================================================
+
+.pagination {
+	position: relative;
+}
+
+.pagination-prev {
+	@include absolute(top 0 left 0);
+}
+
+.pagination-next {
+	@include absolute(top 0 right 0);
+}
+
+.page-list {
+	text-align: center;
+}
+
+.page-current {
+	border: 1px solid $color-primary;
+    padding: 0 3px;
+    &:hover {
+    	border-color: $color-secondary;
+    }
+}
+
+.pagination-prev,
+.pagination-next,
+.page-numbers {
+	display: inline-block;
+}

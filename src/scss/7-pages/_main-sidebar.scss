@@ -3,9 +3,11 @@
 // ==========================================================================
 
 .main-sidebar {
-
+	@include susy-clearfix;
 	&__img-wrap {
 		height: 360px;
 	}
-
+	&__widget a{
+		margin: 10px 0 0;
+	}
 }

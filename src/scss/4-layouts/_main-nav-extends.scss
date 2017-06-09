@@ -40,7 +40,7 @@ $site-header-nav-link-p : 15px 25px;
     border-bottom: $site-header-nav-border;
     margin-top: $site-header-height;
     @include media-query(large) {
-    	margin-bottom: 30px;
+    	//margin-bottom: 30px;
     	margin-top: inherit;
     }
 

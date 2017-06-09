@@ -16,7 +16,7 @@
 
 	.wrap {
 		@include container;
-		@include susy-clearfix
+		@include susy-clearfix;
 	}
 
 	.container--small {
@@ -102,13 +102,14 @@
 .section-header-heading {
 	border-bottom: 1px solid #ebebeb;
     font-size: 2.25em;
-    margin: 0 0 20px;
+    //margin: 0 0 20px;
+    margin: 0 0 10px;
     padding: 0 0 10px;
 }
 
 .section-heading {
 	@include susy-clearfix;
-	@include span(12);
+	@include span(full);
 	&--primary {
 		@extend .section-header-heading;
 		color: $brand-color;
@@ -132,8 +133,8 @@
 	}
 }
 
-.img-overlay-wrap {
-
+.img-overlay {
+	overflow: hidden;
 }
 
 .img-cover {
@@ -141,4 +142,11 @@
     background-size: cover;
     height: 100%;
     width: 100%;
+}
+
+.anchor--inverse-hover {
+	color: $color-secondary;
+	&:hover {
+		color: $color-primary;
+	}
 }

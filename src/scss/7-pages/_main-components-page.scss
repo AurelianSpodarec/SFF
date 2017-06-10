@@ -12,6 +12,6 @@
 .main-sidebar { 
 	@include span(12);
 	@include media-query(medium) {
-		@include span(5 of 16);
+		@include span(5 of 16 last);
 	}
 }

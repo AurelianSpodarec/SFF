@@ -14,6 +14,9 @@
 .video-about__col {
 	@include span(12);
 	@include media-query(medium) {
-		@include span(6);
+		@include span(first 6);
+		&:last-child {
+			@include span(6 last);
+		}
 	}
 }

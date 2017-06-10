@@ -3,22 +3,22 @@
 // ==========================================================================
 
 .reciptes 	{
-
+	@include susy-clearfix;
 	&-sidebar {
 		@include span(12);
 		@include media-query(large) {
-			@include span(4 of 16 nest);
+			@include span(3);
 		}
 	}
 
 	&-main {
 		@include span(12);
 		@include media-query(large) {
-			@include span(12 of 16 nest);
+			@include span(9 last);
 		}
-
 		&--inner {
-			@include susy-clearfix;
+			 
 		}
+ 
 	}
 }

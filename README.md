@@ -1,13 +1,25 @@
 # Super Flexible Framework
 
-Super Flexibile Framework, shorten to SFF, is a framework I have designed to help me setting up the initial code for the projects. 
+Super Flexibile Framework, shorten to SFF, is a framework I have designed to help me setting up the initial code for the projects.
 
-Everytime when we start a project, we need to create folder, define variables do this and that. 
+## SCSS Folder Structure
 
-I have created a dynamic like website, which is nothing like Bootstrap or Materialise. You have 100% control over everything. If you want a new button, you add it in the setting file, and create the class of the button name - its that easy!
+### 0-lib
 
-I have put everything that we might use, mixins, mixins for flexbox, general classes and so forth. 
+### 1-helpers
 
-The framework is new, and there will be a lot of changes.  
+### 2-variables
 
-Will update when I'v done more :D
+### 3-base
+
+### 4-layouts
+
+### 5-objects
+
+### 6-modules
+
+### 7-pages
+
+## The Setting file
+
+

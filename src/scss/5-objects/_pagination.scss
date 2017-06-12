@@ -4,6 +4,8 @@
 
 .pagination {
 	position: relative;
+	@include susy-clearfix;
+	width: 100%;
 }
 
 .pagination-prev {

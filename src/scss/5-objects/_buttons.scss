@@ -39,7 +39,23 @@
     @include button-size($btn-padding-y-lg, $btn-padding-x-lg, $font-size-lg, $line-height-lg);
 }
 
+// Custome Button Sizes
 
+.btn--carousel {
+    @include button-size($btn-padding-y-slider, $btn-padding-x-slider, $font-size-sm, $btn-line-height-slider);
+    border: 3px solid #fff;
+    background-color: rgba(255, 255, 255, 0.2);
+    font-weight: 700;
+    text-transform: uppercase;
+    &:hover,
+    &:active,
+    &:focus{
+        background-color: rgba(255, 255, 255, 0.1); 
+    }
+ 
+ 
+}
+ 
 //Button Colors
 .btn--primary {
     @extend .btn;

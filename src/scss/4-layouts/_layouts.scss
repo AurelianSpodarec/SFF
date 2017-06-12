@@ -17,6 +17,10 @@
 	.wrap {
 		@include container;
 		@include susy-clearfix;
+		padding: 0 15px;
+		@include media-query(x-large) {
+			padding: 0;
+		}
 	}
 
 	.container--small {
@@ -102,8 +106,7 @@
 .section-header-heading {
 	border-bottom: 1px solid #ebebeb;
     font-size: 2.25em;
-    //margin: 0 0 20px;
-    margin: 0 0 10px;
+    margin: 0 0 14px;
     padding: 0 0 10px;
 }
 

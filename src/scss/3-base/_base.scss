@@ -13,16 +13,10 @@ body {
     line-height: ($base-line-height/$base-font-size);
     color: $base-text-color;
     background-color: $base-background-color;
-    margin-top: 62px;
     @if ($base-body-antialiased) {
         -webkit-font-smoothing: antialiased;
         -moz-osx-font-smoothing: grayscale;
     }
-
-    @include media-query(large) {
-    	margin-top: inherit;
-    }
-
 }
 
 a {

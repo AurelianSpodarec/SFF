@@ -29,29 +29,13 @@
 	&--auto-inline {
 		width: auto;
 	}
-
-	&--block {
-		margin-top: 20px;
-		margin-bottom: 20px;
-		&-2 {
-			margin-top: 20px;
-			margin-bottom: 20px;
-			width: 100%;
-			@include media-query(medium) {
-				width: 48.5%;
-				float: left;	
-				margin-right: 3%;
-			}
-			&:nth-child(2) {
-			 	@include media-query(medium) {
-					margin-right: 0;
-				}
-			}//nth
-		}
-	}// block
-
-
+ 
 	//From size
+
+	&--md {
+		padding: $input-padding-y-md $input-padding-x-md;
+		line-height: $input-line-height-md;
+	}
 
 	&--lg {
 		padding: $input-padding-y-lg $input-padding-x-lg;

@@ -111,7 +111,7 @@
 	$btn-primary-bg:                $brand-color !default;
 	$btn-primary-border-color:      $btn-primary-bg !default;
 	 
-	// Buttons Paddings
+	// Buttons Sizes
 	$btn-padding-y: 				.5rem !default;
 	$btn-padding-x:  				1rem !default;
 	$btn-line-height:  				1.25 !default;
@@ -128,6 +128,11 @@
 	$btn-padding-y-lg:		 		1.5rem !default;
 	$btn-padding-x-lg:		 		2rem !default; 
 	$btn-line-height-lg:	 		1.5 !default;
+
+	//Button Custom
+	$btn-padding-y-slider:			.75rem;
+	$btn-padding-x-slider:			.9rem;
+	$btn-line-height-slider:		1.25;
 
 	$btn-transition:		 		all .2s ease-in-out !default;
 
@@ -154,6 +159,10 @@
 	$input-height:                 	(($font-size-base * $btn-line-height) + ($btn-padding-y / 2)) !default;
 	$input-padding-y:				($btn-padding-y / 2);
 	$input-padding-x:				($btn-padding-x / 2);
+
+	$input-padding-y-md:			($btn-padding-y-md / 2);
+	$input-padding-x-md:			($btn-padding-x-md / 2);
+	$input-line-height-md:			$btn-line-height-md;
 
 	$input-padding-y-lg:			($btn-padding-y-lg / 2);
 	$input-padding-x-lg:			($btn-padding-x-lg / 2);
